@@ -63,8 +63,8 @@ body.night .logoimage {
 
 
 <body class="day">
-	<a data-w-id="02534d01-3d24-3cf5-9631-18ea0bfcd9cc" style="opacity: 1;" href="/info" class="close_link w-inline-block">
-		<div class="close_link_text">Info</div>
+	<a data-w-id="02534d01-3d24-3cf5-9631-18ea0bfcd9cc" style="opacity: 1;" href="mailto:info@heleusproperty.com" class="close_link w-inline-block">
+		<div class="close_link_text">info@heleusproperty.com</div>
 	</a>
 	
 	<div class="hero_section">
@@ -87,7 +87,7 @@ body.night .logoimage {
 
 function setBodyClass(currentHour, currentMinute, sunriseHour, sunriseMinute, sunsetHour, sunsetMinute) {
 	if (currentHour > sunriseHour && currentHour < sunsetHour) {
-		document.body.className = "day";
+		document.body.className = "night";
 	} else if (currentHour < sunriseHour || currentHour > sunsetHour) {
 		document.body.className = "night";
 	} else if (currentHour == sunriseHour) {
