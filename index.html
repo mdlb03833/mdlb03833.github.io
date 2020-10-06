@@ -59,7 +59,31 @@ body.night .logoimage {
 
  
  
-</style></head><body class="day"><a data-w-id="02534d01-3d24-3cf5-9631-18ea0bfcd9cc" style="opacity: 1;" href="/info" class="close_link w-inline-block"><div class="close_link_text">Info</div></a><div class="hero_section"><div class="div-block-2 canvas"><a href="/info" class="home_link w-inline-block"></a><div data-w-id="48635b8b-792c-d50d-0abe-9ab34ea3423a" style="opacity: 1;" class="container w-container"><div class="logoimage"></div><p class="paragraph">Heleus Property is a real estate investment firm that owns and operates neighborhood retail properties..</p></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5eefb3f21c86f23d6b5e471b" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://uploads-ssl.webflow.com/5eefb3f21c86f23d6b5e471b/js/webflow.175f1eaff.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script type="text/javascript">
+</style></head>
+
+
+<body class="day">
+	<a data-w-id="02534d01-3d24-3cf5-9631-18ea0bfcd9cc" style="opacity: 1;" href="/info" class="close_link w-inline-block">
+		<div class="close_link_text">Info</div>
+	</a>
+	
+	<div class="hero_section">
+		<div class="div-block-2 canvas">
+			<a href="/info" class="home_link w-inline-block">
+			</a>
+		<div data-w-id="48635b8b-792c-d50d-0abe-9ab34ea3423a" style="opacity: 1;" class="container w-container">
+			
+	<p class="paragraph">Heleus Property is a real estate investment firm that owns and operates neighborhood retail properties.
+	</p>
+	</div>
+	</div>
+	</div>
+	
+	<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5eefb3f21c86f23d6b5e471b" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+	</script>
+	
+	<script src="https://uploads-ssl.webflow.com/5eefb3f21c86f23d6b5e471b/js/webflow.175f1eaff.js" type="text/javascript">
+	</script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script type="text/javascript">
 
 function setBodyClass(currentHour, currentMinute, sunriseHour, sunriseMinute, sunsetHour, sunsetMinute) {
 	if (currentHour > sunriseHour && currentHour < sunsetHour) {
@@ -70,13 +94,13 @@ function setBodyClass(currentHour, currentMinute, sunriseHour, sunriseMinute, su
 		if (currentMinute < sunriseMinute) {
 			document.body.className = "night";
 		} else {
-			document.body.className = "day";
+			document.body.className = "night";
 		}
 	} else if (currentHour == sunsetHour) {
 		if (currentMinute >= sunsetMinute) {
 			document.body.className = "night";
 		} else {
-			document.body.className = "day";
+			document.body.className = "night";
 		}
 	}
 }
